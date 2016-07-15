@@ -112,7 +112,7 @@ php artisan make:middleware [middlewareName]
 ---
 
 ### リクエストを処理する
-* next($request)を返すで，次のミドルウェアにリクエストを流している感じ
+* next($request)を呼び出して，次のミドルウェアにリクエストを流している感じ
 
 ```php
 public function handle($request, Closure $next)
